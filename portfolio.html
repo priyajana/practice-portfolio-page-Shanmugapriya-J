@@ -4,36 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priya Portfolio</title>
-    
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body bgcolor="#CCFFFF">
-    <header>
-
-        <h1>My Portfolio</h1>
+<body>
+    <header class ="portfolio-header">
+       <marquee scrollamount="15px"> <h2>My Portfolio</h2></marquee>
         <hr>
-    <header>
+    </header>
 
-    <section>
+    <section  id = "aboutme">
         <h2>About me</h2>
-        <img src = "me.jpg" width = "100px">
-        <p>Hi!
-            I'm Priya. 
+        <img src = "me.jpg" width = "100px" alt="my profile photo">
+        <p> Hi!
+            I'm Priya,  </p>
             <ul>
                 <li>I live in O'Fallon, Missouri. </li>
                 <li>I'm a stay at home mom of two girls. </li>
+                <li>I enjoy listening to music and reading books.</li>
                 <li> I have a  background in Software Development.</li>
-                <li>Here's a link to my GitHub repo - <a href = "https://github.com/priyajana" target="_blank"> My GitHub </a></li>
+                <li> Link to my GitHub repo is at the bottom of the page ! <img src="point.png" width="18px"></li>
             </ul>
             You can checkout my skill set below and reach out to me if you have any questions!
-        </p>
-
-        <p> Thank you for visiting my page!</p>
-        
-        <article>
-
+       
+    </section>        
+        <section class = 'skills'>
             <h3>My Skills</h3>
 
-            <table border="1px">
+            <table >
                 <thead>
                     <tr >
                         <th>Technology</th>
@@ -43,30 +41,29 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td >HTML</td>
+                        <td style="color:red" >HTML</td>
                         <td>Intermediate</td>
                         
                     </tr>
                     <tr>
-                        <td>Java</td>
+                        <td style="color:blue">Java</td>
                         <td>Intermediate</td>
                         
                     </tr>
                     <tr>
-                        <td>Python</td>
+                        <td style="color:green">Python</td>
                         <td>Intermediate</td>
                         
                     </tr>
                 </tbody>
              </table>
         
-     </section>
-     <aside>
-
+            </section> 
+     
         <h3>Contact Form</h3>
-
+  
         <div>
-            <form action="/submit" method="POST">
+            <form action="/" method="POST">
                 
                         <label for="name">Name:</label><br/>
                         <input type="text" id="name" name="name"><br/>
@@ -82,10 +79,9 @@
             </form>
         </div>
 
-     </aside>
      <hr>
      <footer>
-        <p>&copy; 2025 My Portfolio</p>
+        <p>&copy; <a href = "https://github.com/priyajana" target="_blank"> My GitHub </a></p>
 
      </footer>
 
